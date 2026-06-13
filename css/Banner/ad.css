@@ -1,0 +1,80 @@
+/* 广告位开始 */
+.ad{
+	width:100%;
+	height: 170px;
+	margin:0 0 26px;
+	background-color: #fff;
+}
+.ad .left-iconfont{
+	width: 234px;
+	height: 170px;
+	float: left;
+	background-color: #5f5750;
+	padding:3px;
+}
+.ad .left-iconfont ul li{
+	width:76px;
+	height: 82px;
+	float:left;
+	position:relative;
+}
+.ad .left-iconfont ul li a{
+	display:block;
+	padding-top: 18px;
+	color:#fff;
+	font-size:12px;
+	opacity: .7;
+	transition:all .2s;
+}
+.ad .left-iconfont ul li a i{
+	font-size:24px;
+	line-height: 30px;;
+}
+.ad .left-iconfont ul li a:hover{
+	opacity: 1;
+}
+/* 使用伪元素画框 */
+.ad .left-iconfont .row-border::before{
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 1px;
+	background-color: #665e57;
+	top:0;
+	left: 3px;
+}
+.ad .left-iconfont .colum-border::before{
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 1px;
+	background-color: #665e57;
+	top:0;
+	left: 3px;
+}
+.ad .left-iconfont .colum-border::after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 70px;
+	background-color: #665e57;
+	top:6px;
+	right: 0;
+	left:0;
+}
+
+.ad .right-img{
+	width: 316px;
+	height: 170px;
+	/* background-color: skyblue; */
+	float: left;
+	margin-left: 14.66px;
+	transition: all .2s linear;
+}
+.ad .right-img img{
+	width:100%;
+}
+.ad .right-img:hover{
+	box-shadow:0 15px 30px rgba(0, 0, 0, .15);
+}
+/* 广告位结束 */

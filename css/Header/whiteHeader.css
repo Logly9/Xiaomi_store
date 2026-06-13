@@ -1,0 +1,170 @@
+/* 白色导航栏开始 */
+.white-header {
+	width: 100%;
+	height: 100px;
+	background-color: #fff;	
+	clear: both;
+	position: relative;
+}
+
+.white-header .mi-logo,
+.white-header .middle-nav,
+.white-header .search {
+	float: left;
+}
+
+.white-header .mi-logo {
+	width: 234px;
+	height: 100px;
+	/* background-color: orangered; */
+}
+
+.white-header .mi-logo .logo {
+	width: 55px;
+	height: 55px;
+	margin-top: 22.5px;
+	/* background-color: pink; */
+}
+
+.white-header .mi-logo .logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.white-header .middle-nav {
+	width: 696px;
+	height: 100px;
+	/* line-height: 100px; */
+	/* background-color: skyblue; */
+}
+
+.white-header .middle-nav>.nav>li {
+	padding: 38px 10px;
+	float: left;
+}
+
+.white-header .middle-nav a:hover {
+	color: #ff6700;
+}
+
+/* 下拉列表 */
+.white-header .middle-nav .nav .nav-list {
+	width: 100%;
+	/* height: 229px; */
+	height: 0;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .18);
+	position: absolute;
+	left: 0;
+	top: 100px;
+	overflow: hidden;
+	transition: all 1s;
+	/* 显示优先级 */
+	z-index: 1;
+	/* opacity: 1; */
+	/* display: none; */
+}
+
+.white-header .middle-nav .nav .nav-list li {
+	width: 204px;
+	height: 201px;
+	/* height: 0; */
+	padding-top: 35px;
+	box-sizing: border-box;
+	/* background-color: black; */
+	float: left;
+}
+
+.white-header .middle-nav .nav .nav-list li a {
+	display: block;
+	/* height: 229px; */
+}
+
+.white-header .middle-nav .nav .nav-list .img-box {
+	width: 100%;
+	height: 110px;
+	/* background-color: red; */
+	border-right: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.white-header .middle-nav .nav .nav-list .img-box img {
+	height: 100%;
+}
+
+.white-header .middle-nav .nav .nav-list .nav-name {
+	color: #333;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.white-header .middle-nav .nav .nav-list .nav-price {
+	color: #ff6700;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.white-header .middle-nav .nav .nav-list ul li:nth-child(6) div {
+	border-right: none;
+}
+
+.white-header .middle-nav .nav li:hover>.nav-list {
+	/* display: block; */
+	height: 229px;
+}
+
+.white-header .search {
+	width: 296px;
+	height: 100px;
+	/* background-color: springgreen; */
+	padding-top: 25px;
+}
+
+.white-header .search input {
+	width: 244px;
+	height: 50px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	float: left;
+	padding-left: 10px;
+	/* 去掉外边框 */
+	outline: none;
+	transition: all .3s;
+}
+
+.white-header .search button {
+	width: 52px;
+	height: 50px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	float: left;
+	font-size: 24px;
+	color: #616161;
+	/* 去掉外边框 */
+	outline: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+/* 鼠标悬停边框变灰 */
+.white-header .search input:hover,
+.white-header .search input:hover+button {
+	border-color: #b0b0b0;
+}
+
+/* 鼠标悬停搜索框变橘 */
+.white-header .search button:hover {
+	border-color: #ff6700;
+	background-color: #ff6700;
+	color: #fff;
+}
+
+/* 点击边框变橘 */
+.white-header .search input:focus,
+.white-header .search input:focus+button {
+	border-color: #ff6700;
+}
+
+/* 白色导航栏结束 */
